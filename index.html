@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder Demo</title>
+    <style>
+        video {
+            display: block;
+            margin: 0 auto;
+            width: 50%;
+            height: 500px;
+            object-fit: cover;
+
+        }
+
+        video::-webkit-media-controls {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+        }
+
+        video::-webkit-media-controls-timeline {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        video::-webkit-media-controls-volume-slider {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        video::-webkit-media-controls-volume-slider-thumb {
+            background-color: white;
+        }
+
+        h1, h3 {
+            text-align: center;
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Recipe Finder Demo</h1>
+    <h3>built with Python & Spoonacular API</h3>
+    <video width="640" height="360" controls>
+        <source src="recipefinderdemo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</body>
+</html>
